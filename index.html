@@ -184,6 +184,28 @@
             margin-bottom: 3rem;
         }
 
+        .price-highlight {
+            color: #FFD700;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8),
+                         0 0 20px rgba(255, 215, 0, 0.6),
+                         0 0 30px rgba(255, 215, 0, 0.4);
+            animation: shine 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes shine {
+            from { 
+                text-shadow: 0 0 10px rgba(255, 215, 0, 0.8),
+                             0 0 20px rgba(255, 215, 0, 0.6),
+                             0 0 30px rgba(255, 215, 0, 0.4);
+            }
+            to { 
+                text-shadow: 0 0 20px rgba(255, 215, 0, 1),
+                             0 0 30px rgba(255, 215, 0, 0.8),
+                             0 0 40px rgba(255, 215, 0, 0.6);
+            }
+        }
+
         .cta-buttons {
             display: flex;
             gap: 1rem;
@@ -546,7 +568,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">Amit Talwar</div>
+            <div class="logo">AT Web Builder</div>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
@@ -567,8 +589,10 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Build, Launch & Grow Your Digital Presence at Unbeatable Prices</h1>
-                <h2>Websites, Apps, Video Editing & Digital Services — All in One Place</h2>
-                <p class="tagline">Python | Java | React – Full Stack Web & App Developer<br>Adobe Premiere Pro, VFX, Motion Graphics Expert</p>
+                <h2>Website Development & Free Hosting - <span class="price-highlight">$ 5 per month</span><br>
+                App Development - <span class="price-highlight">$ 50</span><br>
+                Monthly Video Editing for Social Media - <span class="price-highlight">$25/month</span><br>
+                SEO Backlinks for Your Website - <span class="price-highlight">$10</span></h2>
                 <div class="cta-buttons">
                     <a href="#services" class="btn btn-primary">Get Started</a>
                     <a href="https://wa.me/919540218821" target="_blank" class="btn btn-secondary">Contact on WhatsApp</a>
